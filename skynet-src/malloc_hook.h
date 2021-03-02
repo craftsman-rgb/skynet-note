@@ -12,7 +12,9 @@ extern size_t mallctl_int64(const char* name, size_t* newval);
 extern int    mallctl_opt(const char* name, int* newval);
 extern bool   mallctl_bool(const char* name, bool* newval);
 extern int    mallctl_cmd(const char* name);
+dump出c的内存
 extern void   dump_c_mem(void);
+dumplua的内存
 extern int    dump_mem_lua(lua_State *L);
 extern size_t malloc_current_memory(void);
 
